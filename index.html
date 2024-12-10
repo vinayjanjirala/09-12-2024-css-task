@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* 1. Given the following HTML code, write the CSS selector to apply a style to all <p> 
+             elements that are direct children of a <div> with the class .container */
+
+        .container>p{
+            color: blue;
+        }
+
+       /* 2. Using the provided HTML code, write the CSS selector to apply a style to all <a> elements inside a <nav> element,
+            but only if the <a> is a descendant of an element with the class .active:*/
+        nav .active a{
+            color: blueviolet;
+        }
+
+       /* 3. Given the following HTML structure, create a CSS selector to target all the <li>
+             elements that are siblings of a <h2> element*/
+        h2~li{
+            color: blue;
+        }
+
+       /* 4. Given the HTML structure below, write a CSS rule to select all <button> elements inside
+             a <div> that is also a descendant of a <form> element*/
+        form div button{
+            color: brown;
+        }
+       /* 5. Using the following HTML structure, write a CSS rule to style only the <span> elements that are within 
+            a <p> element, but not if they are within a <div>*/
+        p>span{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Paragraph 1</p>
+        <div>
+          <p>Paragraph 2</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#">Link 1</a>
+        <div class="active">
+          <a href="#">Link 2</a>
+        </div>
+      </nav>
+
+      <section>
+        <h2>Heading</h2>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+        <p>Paragraph</p>
+      </section>
+
+      <form>
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+
+      <div>
+        <p><span>Text 1</span></p>
+        <div><span>Text 2</span></div>
+      </div>
+    
+</body>
+</html>
